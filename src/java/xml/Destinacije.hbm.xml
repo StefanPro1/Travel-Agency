@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 06-Aug-2018 19:42:19 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="agencija" name="model.Destinacije" optimistic-lock="version" table="destinacije">
+    <id name="idDestinacije" type="java.lang.Integer">
+      <column name="idDestinacije"/>
+      <generator class="identity"/>
+    </id>
+    <many-to-one class="model.AvioKompanije" fetch="select" name="avioKompanije">
+      <column name="fk_aviokompanije"/>
+    </many-to-one>
+    <property name="grad" type="string">
+      <column length="45" name="Grad"/>
+    </property>
+    <property name="drzava" type="string">
+      <column length="45" name="Drzava"/>
+    </property>
+    <property name="cena" type="java.lang.Integer">
+      <column name="Cena"/>
+    </property>
+    <set fetch="select" inverse="true" lazy="true" name="rezervacijas" table="rezervacija">
+      <key>
+        <column name="fk_destinacije"/>
+      </key>
+      <one-to-many class="model.Rezervacija"/>
+    </set>
+  </class>
+</hibernate-mapping>

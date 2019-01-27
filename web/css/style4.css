@@ -1,0 +1,73 @@
+body {
+    margin:0;
+    padding: 0;
+    background-image: url(../img/credit-card.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    font-family: Tahoma, sans-serif;
+}
+ 
+
+.form-area {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:600px;
+    height:450px;
+    box-sizing: border-box;
+    background:#ddd;
+    padding: 40px;     
+}
+
+.selected {
+height: 25px;
+float: left; 
+margin-left: 0px;
+position: relative;
+display: block;
+height: 2em;
+line-height: 3;
+background: #fff;
+overflow: hidden;
+border-radius: .5em;
+}
+menu3::-ms-expand {
+  display: none;
+}
+
+.menu3:hover::after {
+  color: #f39c12;
+}
+.menu3::after {
+  -webkit-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+.form-area input[type=submit] {
+border:none; 
+    outline: none;
+    height:40px;
+   color:#fff;
+   font-size: 15px;
+   background-color: tomato;
+   border-radius: 20px;
+   cursor: pointer;
+   margin-top: 16px;
+   margin-left: 216px;
+   width: 60px;
+}
+.form-area input[type=text]{
+  height: 25px;
+float: left; 
+margin-top: -1.75px;
+margin-left: -3px;
+position: relative;
+display: block;
+height: 2em;
+line-height: 3;
+background: #fff;
+overflow: hidden;
+border-radius: .5em;  
+}
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="agencija"/>
+  <table-filter match-name="zaposleni"/>
+  <table-filter match-name="destinacije"/>
+  <table-filter match-name="rezervacija"/>
+  <table-filter match-name="avio kompanije"/>
+  <table-filter match-name="hoteli"/>
+  <table-filter match-name="korisnici"/>
+</hibernate-reverse-engineering>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/agencija?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <mapping resource="xml/Destinacije.hbm.xml"/>
+    <mapping resource="xml/Rezervacija.hbm.xml"/>
+    <mapping resource="xml/Zaposleni.hbm.xml"/>
+    <mapping resource="xml/AvioKompanije.hbm.xml"/>
+    <mapping resource="xml/Hoteli.hbm.xml"/>
+    <mapping resource="xml/Korisnici.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

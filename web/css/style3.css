@@ -1,0 +1,120 @@
+a{
+color:tomato;    
+}
+
+p{
+color:#FFFFFF;    
+}
+
+
+body {
+    margin:0;
+    padding: 0;
+    background-image: url(../img/hotel1.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    font-family: Tahoma, sans-serif;
+}
+
+.form-area {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:400px;
+    height:600px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+    padding: 40px;     
+}
+
+h3{
+    margin-left:85px;
+    font-family: sans-serif;
+    color: #fff;
+    
+    
+}
+
+.menu3 {
+height: 25px;
+float: left; 
+margin-left: 0px;
+position: relative;
+display: block;
+height: 2em;
+line-height: 3;
+background: #fff;
+overflow: hidden;
+border-radius: .5em;
+width: 310px;
+}
+menu3::-ms-expand {
+  display: none;
+}
+
+.menu3:hover::after {
+  color: #f39c12;
+}
+.menu3::after {
+  -webkit-transition: .25s all ease;
+  transition: .25s all ease;
+}
+#submit {
+border:none; 
+    outline: none;
+    height:40px;
+   color:#fff;
+   font-size: 15px;
+   background-color: tomato;
+   border-radius: 20px;
+   cursor: pointer;
+   margin-top: 250px;
+   margin-left: 70px;
+   width: 180px;
+}
+
+#nocenja {
+float: left; 
+margin-left: 180px;
+margin-top: 63px;
+position: absolute;
+display: block;
+height: 2em;
+line-height: 3;
+background: #fff;
+overflow: hidden;
+border-radius: .5em;
+width: 50px;
+}
+
+
+
+#nocenja:hover::after {
+  color: #f39c12;
+}
+#nocenja::after {
+  -webkit-transition: .25s all ease;
+  transition: .25s all ease;
+  
+}
+#pet{
+    color:#fff;
+   position: absolute; 
+   margin-left: 0px;
+margin-top: 66px;
+}
+label{
+    position:absolute;
+    color:#fff;
+    margin-top: 135px;
+    margin-left:0px;
+    overflow: hidden;
+    display: block;
+}
+
+#in{
+    position:absolute;
+    margin-top:133px;
+    margin-left:-106px;
+}

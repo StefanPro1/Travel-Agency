@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 06-Aug-2018 19:42:19 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="agencija" name="model.Korisnici" optimistic-lock="version" table="korisnici">
+    <id name="idKorisnici" type="int">
+      <column name="idKorisnici"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="ime" type="string">
+      <column length="45" name="Ime"/>
+    </property>
+    <property name="prezime" type="string">
+      <column length="45" name="Prezime"/>
+    </property>
+    <property name="adresa" type="string">
+      <column length="45" name="Adresa"/>
+    </property>
+    <property name="brTelefona" type="string">
+      <column length="45" name="Br_Telefona"/>
+    </property>
+    <property name="username" type="string">
+      <column length="45" name="Username"/>
+    </property>
+    <property name="password" type="string">
+      <column length="32" name="Password"/>
+    </property>
+    <set fetch="select" inverse="true" lazy="true" name="rezervacijas" table="rezervacija">
+      <key>
+        <column name="fk_korisnici"/>
+      </key>
+      <one-to-many class="model.Rezervacija"/>
+    </set>
+  </class>
+</hibernate-mapping>

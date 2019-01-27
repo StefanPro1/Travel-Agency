@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 06-Aug-2018 19:42:19 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="agencija" name="model.AvioKompanije" optimistic-lock="version" table="`avio_kompanije`">
+    <id name="idAvioKompanije" type="java.lang.Integer">
+      <column name="`idAvio_kompanije`"/>
+      <generator class="identity"/>
+    </id>
+    <property name="naziv" type="string">
+      <column length="45" name="Naziv"/>
+    </property>
+    <set fetch="select" inverse="true" lazy="true" name="destinacijes" table="destinacije">
+      <key>
+        <column name="fk_aviokompanije"/>
+      </key>
+      <one-to-many class="model.Destinacije"/>
+    </set>
+  </class>
+</hibernate-mapping>

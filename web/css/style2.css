@@ -1,0 +1,129 @@
+a {
+color:#fff;
+}
+
+body {
+    margin:0;
+    padding: 0;
+    background-image: url(../img/plane.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    font-family: Tahoma, sans-serif;
+}
+
+.form-area {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:400px;
+    height:680px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+    padding: 40px;     
+}
+.form-area1 {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:400px;
+    height:440px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+    padding: 40px;     
+}
+h3{
+    margin-top:-15px;
+    padding-left:125px;
+    color:tomato; 
+    font-size: 25px;
+}
+h2{
+    margin-top:-15px;
+    padding-left:80px;
+    color:tomato; 
+    font-size: 25px;
+}
+.form-area p {
+    margin:0;
+    padding: 0;
+    font-weight: bold;
+    color:#FFFFFF;  
+}
+.form-area1 p {
+    margin:0;
+    padding: 0;
+    font-weight: bold;
+    color:#FFFFFF;  
+}
+.form-area input{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.form-area1 input{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.form-area input[type=text],
+.form-area input[type=password] {
+   border:none;
+   border-bottom: 1px solid silver;
+   background-color: transparent;
+   outline: none;
+   height:40px;
+   color:#fff;
+   display:16px;  
+}
+#valid {
+   border:none;
+   border-bottom: 1px solid silver;
+   background-color: transparent;
+   outline: none;
+   height:40px;
+   color:#fff;
+   display:16px;   
+}
+::placeholder{
+    color:#fff;
+    
+}
+.form-area1 input[type=text],
+.form-area1 input[type=password] {
+   border:none;
+   border-bottom: 1px solid silver;
+   background-color: transparent;
+   outline: none;
+   height:40px;
+   color:#fff;
+   display:16px;  
+}
+.form-area input[type=submit]{
+    border:none; 
+    outline: none;
+    height:40px;
+   color:#fff;
+   font-size: 15px;
+   background-color: tomato;
+   border-radius: 20px;
+   cursor: pointer;
+}
+.form-area1 input[type=submit]{
+    border:none; 
+    outline: none;
+    height:40px;
+   color:#fff;
+   font-size: 15px;
+   background-color: tomato;
+   border-radius: 20px;
+   cursor: pointer;
+}
+
+#valid:invalid:not(:focus) {
+    outline: 1px solid red;
+    border-bottom: none;
+}
+#checkbox {
+ 
+    margin-left: 160px;
+}
