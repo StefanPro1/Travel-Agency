@@ -1,2 +1,3 @@
-Java application using HTMl, CSS, Hibernate
+Java application using HTMl, CSS, Hibernate.
+
 Booking hotels and airplane tickets
