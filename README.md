@@ -1,1 +1,2 @@
-# JavaApps
+Java application using HTMl, CSS, Hibernate
+Booking hotels and airplane tickets
